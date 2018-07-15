@@ -28,7 +28,7 @@ app.use("/api/questions",questionRouter);
 app.get('/', (req,res) => {
     res.sendFile('./public/index.html');
 })
-mongoose.connect("mongodb://localhost:27017/questionNew", err => {
+mongoose.connect("mongodb://admin:admin123@ds237641.mlab.com:37641/question", err => {
   if (err) console.error(err);
   else console.log("Database connect successful");
 });
