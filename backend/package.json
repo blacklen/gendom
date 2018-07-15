@@ -1,0 +1,11 @@
+{
+  "name": "Stumble",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "LEN",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.3"
+  }
+}

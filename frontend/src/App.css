@@ -1,0 +1,45 @@
+.center{
+  text-align: center;
+  margin-top:0;
+}
+.exponent{
+  margin-top:5%;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+input , button{
+  z-index: 1;
+  position: relative;
+}
+.row{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.rotate span{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  20px 20px;
+  width: 0px;
+  height: 0px;
+}
+span{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:  20px 20px;
+  width: 0px;
+  height: 0px;
+}
+.rotate{
+  transition: 0.2s ease-in-out;
+}
+
+.another-question:hover{
+  background: white;
+}
