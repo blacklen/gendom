@@ -9,14 +9,14 @@ class Answer extends Component {
   }
 
   componentDidMount (){
-    axios.get(`http://localhost:6969/api/questions`).then(data =>{
+    axios.get(`/api/questions`).then(data =>{
       this.setState({data : data.data});
     })
     .catch(err => console.log(err))
   }
 
   onClickYes = ()=>{
-    axios.put(`http://localhost:6969/api/questions/vote`,{bool: "yes", id: this.state.data._id})
+    axios.put(`/api/questions/vote`,{bool: "yes", id: this.state.data._id})
     .then(data =>{
       console.log(data)
     })
@@ -27,7 +27,7 @@ class Answer extends Component {
   }
 
   onClickNo = ()=>{
-    axios.put(`http://localhost:6969/api/questions/vote`,{bool: "no", id: this.state.data._id})
+    axios.put(`api/questions/vote`,{bool: "no", id: this.state.data._id})
     .then(data =>{
       console.log(data)
     })
@@ -58,7 +58,7 @@ class Answer extends Component {
            <header class="s-header">
 
               <div class="header-logo">
-                      <img src="logo.png" alt="Homepage"/>
+                      <img src="logo.png" style = {{width: "24%"}} alt="Homepage"/>
               </div>
 
            </header>
@@ -73,7 +73,7 @@ class Answer extends Component {
 
             <div className="row home-content__main">
                 <div>
-                  <h1>
+                  <h1 style = {{fontFamily: "EB Garamond"}}>
                       {this.state.data.question}
                   </h1>
                 </div>
@@ -98,15 +98,15 @@ class Answer extends Component {
         
         <div class="row about-stats stats block-1-3 block-m-1-2 block-mob-full" data-aos="fade-up">
                 
-            <div class="col-block stats__col ">
+            <div class="col-block stats__col " style = {{fontFamily: "Baloo Chettan", color: "#044a13"}}>
                 <div class="stats__count">{yes}%</div>
                 <h5>Phần trăm đồng ý</h5>
             </div>
-            <div class="col-block stats__col">
+            <div class="col-block stats__col" style = {{fontFamily: "Baloo Chettan", color: "#044a13"}}>
                 <div class="stats__count">{no}%</div>
                 <h5>Phần trăm không đồng ý</h5>
             </div>
-            <div class="col-block stats__col">
+            <div class="col-block stats__col" style = {{fontFamily: "Baloo Chettan", color: "#044a13"}}>
                 <div class="stats__count">{count}</div>
                 <h5>Tổng số người bình chọn</h5>
             </div>
@@ -115,13 +115,13 @@ class Answer extends Component {
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h1 class="display-1 display-1--light">Bạn có biết?</h1>
+                <h1 class="display-1 display-1--light" style ={{fontFamily : "Taviraj"}}>Bạn có biết?</h1>
             </div>
         </div>
 
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
-                <p dangerouslySetInnerHTML={{ __html: this.state.data.tip }}>
+                <p style ={{fontFamily: "EB Garamond"}} dangerouslySetInnerHTML={{ __html: this.state.data.tip }}>
                 </p>
 
                 <a href="#home" onClick={this.reload} className=" smoothscroll btn" id="another-question" style={{background : "transparent", color: "white", borderColor: "white"}}>
@@ -137,7 +137,7 @@ class Answer extends Component {
 
         <footer>
         <div className="row text-center">
-            <div className="col-xs-6">
+            <div className="col-xs-6" style = {{fontFamily: "EB Garamond"}}>
                 <p>MỘT SẢN PHẨM CỦA <a href="#home"> MUỐI </a></p>
                 <p style={{marginTop: "-8%", marginBottom: "0%"}}>© Copyright SheCodes Hackathon 2018</p> 
             </div>

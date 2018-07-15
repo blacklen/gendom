@@ -75,7 +75,7 @@ html, body {
 
 body {
     background: #111111;
-    font-family: "lora-regular", serif;
+    font-family: "montserrat-regular";
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
@@ -111,7 +111,7 @@ a:hover, a:active {
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "montserrat-medium", sans-serif;
+    font-family: "Baloo Chettan", sans-serif;
     color: #000000;
     font-style: normal;
     font-weight: normal;
@@ -2279,9 +2279,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats h5 {
-    font-family: "montserrat-semibold", sans-serif;
+    font-family: "Baloo Chettan", sans-serif;
     margin-top: 1.8rem;
-    color: #000000;
+    color: #044a13;
     font-size: 1.8rem;
     line-height: 1.333;
     position: relative;

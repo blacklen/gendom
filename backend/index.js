@@ -33,7 +33,7 @@ mongoose.connect("mongodb://admin:admin123@ds237641.mlab.com:37641/question", er
   else console.log("Database connect successful");
 });
 
-const port = process.env.port || 6969;
+const port = process.env.PORT || 6969;
 
 app.listen(port, err => {
   if (err) console.log(err);
